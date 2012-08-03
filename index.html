@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+
+<div id="slider">
+	<nav>
+		<img class="previousBtn" src="img/button_left.png" onmouseover="this.src='img/button_left_over.png'" onmouseout="this.src='img/button_left.png'" />
+		<img class="nextBtn" src="img/button_right.png" onmouseover="this.src='img/button_right_over.png'" onmouseout="this.src='img/button_right.png'" />
+	</nav>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="js/slides.js"></script>	
+<script>
+	$(document).ready(function() {
+	
+		$("#slider").slides("slides.html", 5000);
+	
+	});
+</script>
+</body>
+</html>
